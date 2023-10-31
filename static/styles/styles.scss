@@ -1,0 +1,190 @@
+@import'../styles/var';
+@import'../styles/vendor';
+@import'../styles/mixin';
+
+html{
+    font-size : 80%;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    
+}
+    body .wrapper .carousel-inner {
+        
+        margin-left: 2rem;
+        margin-right: 0rem;
+      }
+
+      body .wrapper .carousel-control-prev {
+        background: #8989c5;
+        width:2rem;
+        opacity: 0.5;
+      }
+      
+      body .wrapper .carousel-control-next {
+        background: #8989c5;
+        width: 2rem;
+        opacity: 0.5;
+      }
+  
+
+/* body end*/
+a,
+a:hover{
+    text-decoration:none;
+
+}
+
+.fa-ang-color:hover{
+    color: $other-light-color;
+}
+
+
+
+
+/* navbar*/
+.main_header {
+    width : 99vw;
+    height : 4rem;
+    background-color : $main-color;
+    font-weight:bold;
+
+   & .dropdown-menu .dropdown-item{
+       font-size:medium;
+       font-weight:bold;
+       //background-color: rgb(227, 246, 250);
+        width:25rem;
+        height : 4rem;
+        color:white;
+    }
+
+    & .dropdown-menu .dropdown-item:hover{
+        columns: #98c1d9;
+     }
+
+
+
+    & .navbar-brand{
+        color : white;
+        padding: 1rem;
+        font-size:25px;
+        animation : amigos 1s linear infinite;
+        animation-direction: alternate;
+        & .fab{
+            font-size:2.5rem;
+
+        @keyframes amigos {
+            from{
+                transform : rotate(3deg);
+            }
+            to{
+                transform:rotate(-3deg);
+            }
+        }    
+
+        }
+    }
+
+    & .navbar-brand:hover{
+        color:$other-light-color;
+    }
+
+    & .navbar-nav{
+      
+
+        & .d-flex {
+            font-size: 1rem;
+            
+        }
+
+        & .d-flex .form-control{
+            font-size: 1rem;
+          //  padding-right: 5rem;
+            
+        }
+
+      
+        & .nav-link {
+            @include btn;
+            padding-left: 4rem;
+        }
+
+        & .nav-item {
+        
+            padding-left: 1rem;
+
+        }
+
+        & .nav-item1 .nav-link{
+            font-size: 1.4rem;
+            color:$text-color;
+        
+        }
+
+        & .nav-item2 .nav-link{
+            font-size: 1.4rem;
+            color:$text-color;
+        
+        }
+
+        & .nav-item3 .nav-link{
+            font-size: 1.4rem;
+            color:$text-color;
+          
+        }
+
+
+  
+}
+
+& .nav-item:hover > .nav-link,
+& .navbar-brand:hover > .fab{
+    color:$other-light-color;
+}
+
+& .nav-item1:hover > .nav-link,
+& .navbar-brand:hover > .fab{
+    color:$other-light-color;
+}
+
+& .nav-item2:hover > .nav-link,
+& .navbar-brand:hover > .fab{
+    color:$other-light-color;
+}
+
+& .nav-item3:hover > .nav-link,
+& .navbar-brand:hover > .fab{
+    color:$other-light-color;
+}
+
+& .btn{
+    
+    @include btn;
+    
+}
+& .btn:hover{
+    @include hovereffects;
+    // color:white;
+    color: #98C1D9;
+}
+
+
+}
+
+.navbar-custom-gradient{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(right, #120fbd, #561257, #00dbde, #340235);
+    background: -o-linear-gradient(right, #f80404, #030003, #e40c0c, #28f70d);
+    background: -moz-linear-gradient(right, #00dbde, #fc00ff, #3ff507, #fc00ff);
+    background: linear-gradient(right, #00dbde, #bd0404, #091177, #cfcfcf);
+
+}
+
+.navbar-button-bg{
+    background-color: $lightest-color !important;
+    color: $primary-color !important; 
+}

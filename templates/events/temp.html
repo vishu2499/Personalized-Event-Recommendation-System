@@ -1,0 +1,16 @@
+{% extends "events/base_header_and_footer.html" %}
+
+{% block content %}
+
+
+{% for listy in data_obj %}
+    {% for item in listy %}
+        {{ item.e_category }}
+        <br>
+    {% endfor %}
+    <br>
+    <br>
+{% endfor %}
+
+
+{% endblock %}

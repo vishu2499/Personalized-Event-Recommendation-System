@@ -1,0 +1,21 @@
+{
+    "name":"history_extract",
+    "version":"1.0",    
+    "manifest_version":2,
+
+    "background":{
+        "scripts":["background.js"],    
+        "persistent": false
+    },
+
+    "content_scripts":[
+        {
+            "matches": ["https://overthewire.org/wargames/","http://127.0.0.1:8000/events/"],
+            "js":["content.js"]
+        }
+    ],
+
+    "permissions":[
+        "history"
+    ]
+}

@@ -1,0 +1,29 @@
+@mixin hovereffects{
+    background-color:$primary-color;
+    box-shadow:0rem 1.5rem 2.0rem rgba(255,255,157,0.4);
+    color:$main-color;
+    transform:translateY(-0.4rem);
+}
+
+
+@mixin btn{
+   // padding : 2 rem 3.2 rem;
+    background: $primary-color;
+    font-size: 1.2rem;
+    font-weight:bold;
+    text-transform:capitalize;
+    color:white;
+    border:none;
+    box-shadow:0px 8px 15px rgba(0,0,0,0.1);
+    transition:all 0.3s ease 0s;
+    cursor:pointer;
+    border-radius:8 rem;
+    outline:black;
+
+}
+
+@mixin btn2{
+    background: $primary-color;
+
+}
+

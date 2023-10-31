@@ -1,0 +1,110 @@
+{% comment %} {% extends 'events/base_header_and_footer.html' %}
+
+{% block content %}
+
+    <form action="{% url 'login_user' %}" id="login-form" method="POST">
+        {% csrf_token %}
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+        </div>
+        <button type="submit" name="submit-btn" class="btn btn-primary">Login</button>
+    </form>
+
+{% endblock %} {% endcomment %}
+
+
+
+{% comment %} new code below {% endcomment %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AMIGOS LOGIN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    {% comment %} <link rel="stylesheet" href="styles/login.css" /> {% endcomment %}
+
+    <link rel="stylesheet" href="styles/login.css" /> 
+    
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
+
+  </head>
+  <body>
+
+    <div class="signup-form">
+      <form action="{% url 'login_user' %}" id="login-form" method="POST">
+        {% csrf_token %}
+        <h2>Login</h2>
+        <hr />
+        <h6>Register for more personalized events</h6>
+        <hr />
+
+        <div class="container">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              placeholder="Email"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Password"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Login In
+            </button>
+          </div>
+          <hr />
+          <div class="form-group1">
+            <a href="{% url 'create_user' %}"><b>Don't Have an Account? Register here</b></a>
+            <hr />
+            <a href="{% url 'home_page' %}"><i class="fab fa fa-home fa-ang-color"></i><b>Home</b></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+{% comment %} new code above {% endcomment %}

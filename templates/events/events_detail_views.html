@@ -1,0 +1,128 @@
+
+  {% extends "events/base_header_and_footer.html" %}
+
+  {% block content %}
+
+  <h1>{{ object.e_name }}</h1>
+  <hr>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+       <img src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_800/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1519627962%2Fvltlogy23k1iid9pjffx.jpg" width="80%" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <p>{{ object.e_description }}</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <br>
+      <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+
+  {% if user.is_authenticated %}
+
+      <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" onClick="sendEvidenceToCollector({{user.id}},{{object.pk}},3)">View Date</a>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" onClick="sendEvidenceToCollector({{user.id}},{{object.pk}},2)">View Location</button>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" onClick="sendEvidenceToCollector({{user.id}},{{object.pk}},1)">Intrested? register here</button>
+
+    </p>
+    
+  {% else %}
+
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">View Date</a>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">View Location</button>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Intrested? register here</button>
+
+    </p>
+
+  {% endif %}
+
+
+
+    {% comment %} for date {% endcomment %}
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>
+
+      {% comment %} for location {% endcomment %}
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>
+
+      {% comment %} for registration link {% endcomment %}
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <hr>
+  <h2>Browse Other Similar Events</h2>
+
+  {% comment %} {% for sim_evn in similar_events %}
+    {{ sim_evn.e_name }}
+  {% endfor %} {% endcomment %}
+          <div class="row">
+
+                {% for sim_evn in similar_events%}
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                                <img src="download.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ sim_evn.pk }} {{sim_evn.e_name}}</h5>
+                                    <p class="card-text">{{sim_evn.e_description|truncatewords:20}}</p>
+
+                                    {% if user.is_authenticated %}
+                                      <a href="{% url 'event_detail' sim_evn.pk %}" onclick="sendEvidenceToCollector({{user.id}},{{sim_evn.pk}},4)" class="btn btn-primary">View more</a>
+                                    {% else %}
+                                      <a href="{% url 'event_detail' sim_evn.pk %}" class="btn btn-primary">View more</a>
+                                    {% endif %}
+                                </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+{% endblock %}

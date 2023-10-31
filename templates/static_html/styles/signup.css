@@ -1,0 +1,96 @@
+body {
+    color: #fff;
+   
+    font-family: 'Roboto', sans-serif;
+    background: #a64bf4;
+  background: -webkit-linear-gradient(right, #120fbd, #561257, #00dbde, #340235);
+  background: -o-linear-gradient(right, #f80404, #030003, #e40c0c, #28f70d);
+  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #3ff507, #fc00ff);
+  background: linear-gradient(right, #00dbde, #bd0404, #091177, #cfcfcf);
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.form-control{
+    height: 50px;
+    background: #f2f2f2;
+    box-shadow: none !important;
+    border: none;
+}
+.form-control:focus{
+    background: #e2e2e2;
+}
+.form-control, .btn{        
+    border-radius: 3px;
+}
+.signup-form{
+    width: 450px;
+    margin: 30px auto;
+}
+.signup-form form{
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.signup-form h2 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-top: 0;
+}
+.signup-form hr {
+    margin: 0 -30px 20px;
+}    
+.signup-form .form-group{
+    margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"]{
+    margin-top: 3px;
+}
+.signup-form .row div:first-child{
+    padding-right: 10px;
+}
+.signup-form .row div:last-child{
+    padding-left: 10px;
+}
+.signup-form .btn{       
+    position: center;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background: #180353;
+    border: none;
+    min-width: 140px;
+    margin-left:7rem;
+    margin-right:10rem
+}
+.signup-form .btn:hover, .signup-form .btn:focus{
+    background: #568cb1 !important;
+    outline: none;
+}
+.signup-form a{
+    color: #fff;
+    text-decoration: underline;
+}
+.signup-form a:hover{
+    text-decoration: none;
+}
+.signup-form form a{
+    color: #3598dc;
+    text-decoration: none;
+}	
+.signup-form form a:hover{
+    text-decoration: underline;
+}
+.signup-form .hint-text {
+    padding-bottom: 15px;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Organizer</title>  
+    {% load static %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <!-- <link rel="stylesheet" href="{% static 'styles/login.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" /> -->
+    
+</head>  
+<body>  
+ 
+<section>
+ 
+<form method="POST" class="post-form" action="/organizer/new">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <center><h3>Enter Event Details </h3></center>  
+    <hr>
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">EVENT NAME:</label>  
+    <div class="col-sm-4">  
+      {{ form.ename }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">EVENT DESCRIPTION:</label>  
+    <div class="col-sm-4">  
+      {{ form.edesc }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">EVENT GUEST:</label>  
+    <div class="col-sm-4">  
+      {{ form.eguest }}  
+    </div>  
+  </div> 
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">EVENT LOCATION:</label>  
+    <div class="col-sm-4">  
+      {{ form.eloc }}  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">EVENT CATEGORY:</label>  
+    <div class="col-sm-4">  
+      
+      {{ form.ecat }}  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-primary">Submit</button>  
+    </div>  
+  </div>  
+    </div>  
+    <hr>
+    <center><a href="/organizer/show" class="btn btn-primary">VIEW EVENTS</a></center> 
+ 
+</form>  
+
+
+</section>
+
+</body>  
+</html>  

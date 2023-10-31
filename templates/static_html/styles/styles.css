@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap");
+html {
+  font-size: 80%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+body .wrapper .carousel-inner {
+  margin-left: 2rem;
+  margin-right: 0rem;
+}
+
+body .wrapper .carousel-control-prev {
+  background: #8989c5;
+  width: 2rem;
+  opacity: 0.5;
+}
+
+body .wrapper .carousel-control-next {
+  background: #8989c5;
+  width: 2rem;
+  opacity: 0.5;
+}
+
+/* body end*/
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* navbar*/
+.main_header {
+  width: 99vw;
+  height: 4rem;
+  background-color: black;
+  font-weight: bold;
+}
+.main_header .dropdown-menu .dropdown-item {
+  font-size: medium;
+  font-weight: bold;
+  width: 25rem;
+  height: 4rem;
+  color: white;
+}
+.main_header .dropdown-menu .dropdown-item:hover {
+  columns: #98c1d9;
+}
+.main_header .navbar-brand {
+  color: black;
+  padding: 1rem;
+  font-size: 25px;
+  animation: amigos 1s linear infinite;
+  animation-direction: alternate;
+}
+.main_header .navbar-brand .fab {
+  font-size: 2.5rem;
+}
+@keyframes amigos {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+.main_header .navbar-brand:hover {
+  color: #293241;
+}
+.main_header .navbar-nav .d-flex {
+  font-size: 1rem;
+}
+.main_header .navbar-nav .d-flex .form-control {
+  font-size: 1rem;
+}
+.main_header .navbar-nav .nav-link {
+  background: #293241;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 8 rem;
+  outline: black;
+  padding-left: 4rem;
+}
+.main_header .navbar-nav .nav-item {
+  padding-left: 1rem;
+}
+.main_header .navbar-nav .nav-item1 .nav-link {
+  font-size: 1.4rem;
+  color: black;
+}
+.main_header .navbar-nav .nav-item2 .nav-link {
+  font-size: 1.4rem;
+  color: black;
+}
+.main_header .navbar-nav .nav-item3 .nav-link {
+  font-size: 1.4rem;
+  color: black;
+}
+.main_header .nav-item:hover > .nav-link, .main_header .navbar-brand:hover > .fab {
+  color: #293241;
+}
+.main_header .nav-item1:hover > .nav-link, .main_header .navbar-brand:hover > .fab {
+  color: #293241;
+}
+.main_header .nav-item2:hover > .nav-link, .main_header .navbar-brand:hover > .fab {
+  color: #293241;
+}
+.main_header .nav-item3:hover > .nav-link, .main_header .navbar-brand:hover > .fab {
+  color: #293241;
+}
+.main_header .btn {
+  background: #293241;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 8 rem;
+  outline: black;
+}
+.main_header .btn:hover {
+  background-color: #293241;
+  box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: black;
+  transform: translateY(-0.4rem);
+  color: #98C1D9;
+}
+
+/*# sourceMappingURL=styles.css.map */

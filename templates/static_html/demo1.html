@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="main_header">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <a class="navbar-brand" href="demo.html"
+          ><i class="fab fa-angular"></i><b>MIGOS</b></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto container-fluid">
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">SPORTS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">TRAVEL AND TOURISM</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">FOOD AND BEVERAGES</a>
+                </li>
+                <li><a class="dropdown-item" href="#">ART AND CRAFT</a></li>
+                <li><a class="dropdown-item" href="#">IT AND TECH</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">FASHION AND BEAUTY</a>
+                </li>
+                <li><a class="dropdown-item" href="#">GAMING</a></li>
+                <li><a class="dropdown-item" href="#">LIVE SHOW</a></li>
+                <li><a class="dropdown-item" href="#">DANCE</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >WELNESS HEALTH AND FITNESS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">AUTO AND AUTOMOTIVE</a>
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav-item col-8">
+              <form class="form-inline my-2 my-lg-0 inbutton">
+                <input
+                  class="form-control form-control-lg mr-sm-0 col-8 bg-light border-3"
+                  type="search"
+                  placeholder="Search for Events"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+          </ul>
+
+          <a class="nav-link btn btn-light mx-2 rounded-circle" href="#">
+            <i class="fas fa-arrow-alt-circle-down"></i>
+          </a>
+          <a class="nav-link btn btn-danger mx-2" href="#">LOGIN</a>
+          <a class="nav-link btn btn-danger mx-2" href="#">SIGNUP</a>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <nav
+            id="sidebarMenu"
+            class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+          >
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span data-feather="home"></span>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file"></span>
+                    Orders
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="shopping-cart"></span>
+                    Products
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="users"></span>
+                    Customers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="layers"></span>
+                    Integrations
+                  </a>
+                </li>
+              </ul>
+
+              <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+              >
+                <span>Saved reports</span>
+                <a
+                  class="link-secondary"
+                  href="#"
+                  aria-label="Add a new report"
+                >
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Current month
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Last quarter
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Social engagement
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Year-end sale
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div
+              class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+            ></div>
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  GENERALIZED
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  PERSONALIZED
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <!--1ST TAB CONTENT-->
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <div class="wrapper">
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row row-cols-0 row-cols-md-4 g-4">
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row row-cols-0 row-cols-md-4 g-4">
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row row-cols-0 row-cols-md-4 g-4">
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card" style="width: 18rem">
+                              <img
+                                src="download.jpg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Special title treatment
+                                </h5>
+                                <p class="card-text">
+                                  With supporting text below as a natural
+                                  lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                  >Go somewhere</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--2ND TAB CONTENT-->
+
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                <div class="row row-cols-0 row-cols-md-4 g-4">
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row row-cols-0 row-cols-md-4 g-4">
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="width: 18rem">
+                      <img src="download.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <canvas
+              class="my-4 w-100"
+              id="myChart"
+              width="900"
+              height="380"
+            ></canvas>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+      integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+      integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
